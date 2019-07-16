@@ -15,7 +15,6 @@ h1,h2,h3,h4 span{
 	text-align: left;
 }
 
-
 ul {
 	text-indent: 20px;
 }
@@ -24,7 +23,11 @@ div.header, div.flavors{
 	background-color:white;
 }
 div.header, div.instructions{
-	width: 50%;
+    width: 80%;
+    padding: 30px;
+    margin: 30px;
+    margin-bottom: 0px;
+    
 }
 
 #randomNumber{
@@ -61,4 +64,31 @@ div.header, div.instructions{
 }
 #chocolate{
 	color:brown;
+}
+
+.numberToMatch{
+    margin:30px;
+    position: inherit;
+    padding-right:0px;
+    text-align: center;
+
+}
+.winsAndLosses{
+    margin:30px;
+    position: inherit;
+    /* float:right; */
+    padding-top: 0px;
+
+}
+.flavors{
+    margin:30px;
+    position: inherit;
+}
+.userTotal{
+    margin:30px;
+    position: inherit;
+    padding:20px;
+    text-align:initial;
+    padding-top: 0px;
+
 }
