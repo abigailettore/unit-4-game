@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Ice Cream Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<style>
+    body {
+      background-image: url("assets/images/sprinkles.jpg");
+    }
+</style>
+<body>
+    <div class="instructions">
+        <h1>Ice Cream Collector!</h1>
+		<h2>Instructions</h2>
+		<ul>
+			<li>There are four flavors of ice cream: </li>
+		
+			<ul>
+				<li id="vanilla">vanilla</li>
+				<li id="pistachio">pistachio</li>
+				<li id="strawberry">strawberry</li>
+				<li id="chocolate">chocolate</li>
+			</ul>
+			<li>By clicking on each flavor, you will add to the total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each ice cream is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each flavor.</li>
+		</ul>
+	</div>
+	<div class="numberToMatch">
+		<span id= "randomNumber"></span>
+	</div>
+	<div class="winsAndLosses">
+		<h3>Wins:
+			<span id="numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h3>
+	</div>
+	<div class="flavors">
+		<img src="assets/images/vanilla.png" class=flavorImage id="one" alt="vanilla flavor">
+		<img src="assets/images/pistachio.jpg" class=flavorImage id="two" alt="pistachio flavor">
+		<img src="assets/images/strawberry.jpg" class=flavorImage id= "three" alt="strawberry flavor">
+		<img src="assets/images/chocolate.png" class=flavorImage id= "four" alt="chocolate flavor">
+	</div>
+	<div class="userTotal">
+		<h4>Your total score is:
+			<span id="finalTotal"></span>
+		</h4>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
